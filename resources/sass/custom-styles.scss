@@ -1,0 +1,64 @@
+// Define variables for the spacing
+$nav-height: 50px;
+$container-margin-top: 20px;
+
+// Apply the variables to the styles
+#app {
+    nav {
+        height: $nav-height;
+    }
+
+    .container {
+        margin-top: $container-margin-top;
+    }
+}
+
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .menu-item {
+        position: relative;
+
+        .menu-item-parent {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #f5f5f5;
+            }
+        }
+
+        .submenu {
+            display: none;
+            list-style: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            min-width: 200px;
+            padding: 0;
+            margin: 0;
+            z-index: 100;
+
+            .submenu-item {
+                a {
+                    display: block;
+                    padding: 10px 15px;
+                    text-decoration: none;
+                    color: #333;
+
+                    &:hover {
+                        background-color: #f5f5f5;
+                    }
+                }
+            }
+        }
+    }
+}

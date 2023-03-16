@@ -22,6 +22,11 @@ class Kernel extends ConsoleKernel
     {
         $this->load(__DIR__.'/Commands');
 
+        // Add the command class here
+        // $this->commands([
+        //     Commands\ClearMenuCache::class,
+        // ]);
+
         require base_path('routes/console.php');
     }
 }

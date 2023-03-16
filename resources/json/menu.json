@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Dashboard",
+        "route_name": "dashboard",
+        "icon": "fas fa-tachometer-alt",
+        "roles": ["Admin"],
+        "visible": true,
+        "is_external": false,
+        "label": "",
+        "label_class": "",
+        "children": []
+    },
+    {
+        "title": "Roles",
+        "route_name": "roles.index",
+        "icon": "fas fa-user-tag",
+        "roles": ["Admin"],
+        "visible": true,
+        "is_external": false,
+        "label": "",
+        "label_class": "",
+        "children": [
+            {
+                "title": "List Roles",
+                "route_name": "roles.index",
+                "visible": true,
+                "is_external": false,
+                "roles": ["Admin"],
+                "icon": "",
+                "label": "",
+                "label_class": ""
+            },{
+                "title": "Create Role",
+                "route_name": "roles.create",
+                "visible": true,
+                "is_external": false,
+                "roles": ["Admin"],
+                "icon": "",
+                "label": "",
+                "label_class": ""
+            }
+        ]
+    },{
+        "title": "Users",
+        "route_name": "users.index",
+        "icon": "fas fa-users",
+        "roles": ["Admin"],
+        "visible": true,
+        "is_external": false,
+        "label": "",
+        "label_class": "",
+        "children": [
+            {
+                "title": "List Users",
+                "route_name": "users.index",
+                "visible": true,
+                "is_external": false,
+                "roles": ["Admin"],
+                "icon": "",
+                "label": "",
+                "label_class": ""
+            },{
+                "title": "Create User",
+                "route_name": "users.create",
+                "visible": true,
+                "is_external": false,
+                "roles": ["Admin"],
+                "icon": "",
+                "label": "",
+                "label_class": ""
+            }
+        ]
+    }
+]
